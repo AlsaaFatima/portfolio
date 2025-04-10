@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alsaa Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background-color: #000; color: white; font-family: Arial, sans-serif; margin: 0; }
+
+    .navbar { background-color: #000; padding: 15px 0; }
+    .navbar-brand { color: white; font-weight: bold; font-size: 24px; }
+    .navbar-brand span { color: #ff0057; }
+    .navbar-nav .nav-link { color: white !important; margin-left: 20px; }
+
+    .hero-section {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 100px 50px;
+      background-image: url('3.jpeg'); /* Ensure this image is in the same folder */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.6); /* Optional dark overlay */
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content h1 { font-size: 48px; font-weight: bold; }
+    section { padding: 100px 50px; }
+
+    .section-title { font-size: 36px; font-weight: bold; margin-bottom: 30px; }
+    .about, .services, .portfolio, .contact { background-color: #111; }
+
+    .services .card {
+      background-color: #222; color: white;
+      border: none; border-radius: 12px;
+      transition: background 0.3s;
+    }
+
+    .services .card:hover { background-color: #ff0057; color: white; }
+
+    .contact .form-control::placeholder { color: #ccc; }
+    .contact .form-control {
+      background-color: #333;
+      border: none;
+      color: white;
+    }
+
+    .btn-custom { background-color: #ff0057; color: white; border: none; }
+
+    .project-img {
+      max-height: 100px;
+      object-fit: cover;
+      width: 50%;
+      border-radius: 8px;
+    }
+
+    .edu-logo {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      border-radius: 8px;
+      background-color: white;
+      padding: 5px;
+    }
+
+    .timeline-item {
+      border-left: 4px solid #00d1ff;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -10px;
+      top: 5px;
+      width: 16px;
+      height: 16px;
+      background-color: #00d1ff;
+      border-radius: 50%;
+    }
+
+    footer {
+      background-color: #111;
+      color: #ccc;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home"><span>Alsaa</span>.</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+        <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero-section">
+  <div class="hero-content text-white">
+    <h1>Hello, I'm Alsaa Fatima</h1>
+    <p>MCA Student | Data Science Enthusiast | Developer</p>
+  </div>
+</section>
+
+<!-- Add other sections like About, Education, etc., here -->
+
+</body>
+</html>
+
+
+<!-- About Section -->
+<section id="about" class="about">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="row align-items-center">
+      <div class="col-md-4">
+        <img src="C:\Users\Admin\Downloads\WhatsApp Image 2025-04-08 at 8.02.54 PM.jpeg" class="img-fluid rounded" alt="About">
+      </div>
+      <div class="col-md-8">
+        <p>I am currently pursuing MCA at Reva University, with a strong background in BCA and a keen interest in data analytics, development, and problem-solving. Skilled in Python, SQL, Java, and data visualization tools.</p>
+        <ul>
+          <li><strong>Languages:</strong> Python, Java, C, SQL</li>
+          <li><strong>Tools:</strong> Power BI, Android Studio, Linux</li>
+          <li><strong>Internship:</strong> Data Science with python</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Education Section with Timeline -->
+<section id="education" class="py-5 bg-dark text-white">
+  <div class="container">
+    <h2 class="section-title mb-5 text-center">Education</h2>
+    <div class="timeline">
+
+      <!-- MCA -->
+      <div class="timeline-item d-flex mb-5">
+        <img src="C:\Users\Admin\Downloads\reva.png" alt="Reva Logo" class="edu-logo me-4">
+        <div>
+          <h5>Master of Computer Applications (MCA)</h5>
+          <p class="mb-1">Reva University, Bangalore</p>
+          <p><strong>2024 - Present</strong></p>
+        </div>
+      </div>
+
+      <!-- BCA -->
+      <div class="timeline-item d-flex mb-5">
+        <img src="C:\Users\Admin\Downloads\vid.jpg" alt="Vidyavahini Logo" class="edu-logo me-4">
+        <div>
+          <h5>Bachelor of Computer Applications (BCA)</h5>
+          <p class="mb-1">Vidyavahini First Grade College</p>
+          <p><strong>GPA: 8.5</strong> | 2021 - 2024</p>
+        </div>
+      </div>
+
+      <!-- PUC -->
+      <div class="timeline-item d-flex mb-5">
+        <img src="C:\Users\Admin\Downloads\re.jpeg" alt="Reva PU Logo" class="edu-logo me-4">
+        <div>
+          <h5>PU – PCMC</h5>
+          <p class="mb-1">Reva Independent PU College</p>
+          <p><strong>80.83%</strong> | 2019 - 2021</p>
+        </div>
+      </div>
+
+      <!-- SSLC -->
+      <div class="timeline-item d-flex mb-3">
+        <img src="C:\Users\Admin\Downloads\ses.png" alt="SSLC School Logo" class="edu-logo me-4">
+        <div>
+          <h5>SSLC</h5>
+          <p class="mb-1">SES English School</p>
+          <p><strong>Percentage:</strong> 89% | 2019</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Services Section -->
+<section id="skills" class="services">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card p-4 mb-4">
+          <i class="bi bi-code-slash fs-1"></i>
+          <h4 class="mt-3">Programming</h4>
+          <p>Experienced in Python, Java, C, SQL with hands-on projects and clean coding practices.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4 mb-4">
+          <i class="bi bi-bar-chart-line fs-1"></i>
+          <h4 class="mt-3">Data Analysis</h4>
+          <p>Proficient with pandas, matplotlib, Power BI, and real-world data analytics experience.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4 mb-4">
+          <i class="bi bi-phone fs-1"></i>
+          <h4 class="mt-3">App Development</h4>
+          <p>Developed apps using Android Studio and worked on UI/UX design concepts.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Portfolio Section -->
+<section id="project" class="portfolio py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Projects</h2>
+    
+    <!-- Project 1 -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-5">
+        <img src="C:\Users\Admin\Downloads\credit.png" alt="Credit Card Fraud Detection" class="img-fluid rounded shadow" style="height: 250px; object-fit: cover; width: 100%;">
+      </div>
+      <div class="col-md-7">
+        <h5>Credit Card Fraud Detection</h5>
+        <p>Used ML techniques and Python to detect fraudulent transactions from real datasets.</p>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-5">
+        <img src="C:\Users\Admin\Downloads\object1.jpg" alt="Object Detection" class="img-fluid rounded shadow" style="height: 250px; object-fit: cover; width: 100%;">
+      </div>
+      <div class="col-md-7">
+        <h5>Object Detection</h5>
+        <p>Implemented object detection using OpenCV and Python for real-time video stream analysis.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Hobbies Section -->
+<section id="hobbies" class="hobbies">
+  <div class="container">
+    <h2 class="section-title">Hobbies</h2>
+    <div class="row text-center">
+      <div class="col-md-3 mb-3">
+        <i class="bi bi-joystick fs-1"></i>
+        <h5 class="mt-2">Badminton</h5>
+      </div>
+      <div class="col-md-3 mb-3">
+        <i class="bi bi-palette fs-1"></i>
+        <h5 class="mt-2">Drawing</h5>
+      </div>
+      <div class="col-md-3 mb-3">
+        <i class="bi bi-cup-hot fs-1"></i>
+        <h5 class="mt-2">Cooking</h5>
+      </div>
+      <div class="col-md-3 mb-3">
+        <i class="bi bi-camera-reels fs-1"></i>
+        <h5 class="mt-2">Watching CID</h5>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <p><i class="bi bi-send"></i> alsaafatima66898@gmail.com</p>
+        <p><i class="bi bi-telephone"></i> +91-9123456678	</p>
+       <p>
+  <a href="https://www.linkedin.com/in/alsaa-fatima-962ab3304/" target="_blank">
+    <i class="bi bi-linkedin me-2"></i>
+  </a>
+  <a href="" target="_blank">
+    <i class="bi bi-instagram"></i>
+  </a>
+</p>
+        <button class="btn btn-custom">Download CV</button>
+      </div>
+      <div class="col-md-6">
+        <form>
+          <input type="text" class="form-control mb-3" placeholder="Your Name">
+          <input type="email" class="form-control mb-3" placeholder="Your Email">
+          <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
+          <button class="btn btn-custom">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<footer class="text-center py-4" style="background-color: #111; color: #ccc;">
+  <p class="mb-0">© 2025 Alsaa. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
